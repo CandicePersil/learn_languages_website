@@ -1,0 +1,43 @@
+h1/*reference to main title*/
+{
+	color: #ffffff;/*green*/
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	background-color: #009973;
+}
+h2/*reference to second type of title*/
+{
+	color: #00802b;/*shadow green*/
+}
+h3/*title also*/
+{
+	color: #003311;/*dark green*/
+}
+.key_word/*reference to a class named key_word (can be used several times)*/
+{
+	color: #00994d;/*light blue green*/
+}
+a/*reference to links*/
+{
+	color: #009973;/*light blue blue green*/
+}
+a[target]/*reference to links with the target attribut*/
+{
+	color: #007399;/*blue*/
+}
+a[class="local_page"]/*reference to links with the class attribut named local_page*/
+{
+	color: #009973;
+}
+*/*reference to everything in the page*/
+{
+	font-family: "Comic Sans MS", Verdana, sans-serif;/*change polices*/
+}
+p/*reference to all paragraphs of the page*/
+{
+	text-align: justify;/*justify texts*/
+}
+body/*reference to all things located in the body of the html page*/
+{
+	background-color: #ffffff;/*change background color*/
+}

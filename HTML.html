@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- En-tête de la page -->
+		<!-- Information do not displayed on the web page. -->
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Learn how to code using different languages</title>
+	</head>
+	
+	<body>
+		<!-- Corps de la page -->
+		<h1>Learn how to code using different languages</h1>
+		<h2>
+			<em>Introduction</em>
+		</h2>
+			<p> 
+				The goal of this web page will be to practice html, css and php coding
+				and in the same time to display informatin to learn how to code in different 
+				other languages.
+			</p>
+			<p> 
+				We will display information about: 
+				<ul>
+					<strong>
+						<li>
+							<a href="#HTML_and_CSS">css</a>
+						</li> 
+						<li>php</li> 
+						<li> 
+							<a href="SHELL_SCRIPT.html" target="_blank" class="local_page">shell script</a> 
+						</li> 
+						<li>python</li> 
+						<li>java</li>
+					</strong>
+				</ul> 
+				and eventually 
+					<strong>c and c++</strong>
+			</p>
+			<p>
+				If we have time, we will try to display information on 
+				<strong>security</strong>
+				,with different type of cryptography methods and network.
+			</p>
+			<p>
+				Then, If you liked my courses I will ask you if you want me to add information about 
+				<strong>parallel programming using Cilk</strong>.
+			</p>
+		<h2 id="HTML_and_CSS">
+			<em>HTML and CSS</em>
+		</h2>
+			<h3>Basic but useful information</h3>
+				<p>
+					Never forget to include in the beginning !DOCTYPE html and to use the html balise before coding.
+				</p>
+				<p>
+					You can 
+					<span class="key_word">comment</span> 
+					your html code using < !-- Comment -- >. 
+				</p>
+				<p>
+					<span class="key_word">Links</span> 
+					can be used in several ways. In fact, it is possible to create a like to another webpage that exists
+					in the web, create a link to another local webpage (one of yours) or to another section of your current webpage 
+					usign its ID. To create all these links, we use < a href="" > < / a >. Between "", we can put an internet link 
+					such as https://... or webpage.html if you local webpage is in the same directory as your webpage or the id of the 
+					section you want to reach using #id where your id has been created using < hx id="id">  < / hx >. You can use, after 
+					your href, target="_blank" to open a new tab where will be displayed the page you target.
+					To summarize local likes see the above picture.
+				</p>
+				<figure>
+					<img src="images/differents_liens_relatifs.png" alt="Les_differents_liens_relatifs"/>
+					<figcaption>Different relativ links</figcaption>
+				</figure>
+				<p>
+					Using html, 
+					<span class="key_word">images</span> 
+					can also be included. For example we can display a picture to show how looks 
+					our website by just using html and not css.<br/>
+					################################################<br/>
+					<img src="images/html_css_part.jpg" alt="Image_showing_html_css_part"></br>
+					################################################<br/>
+					But be carefull, don't forget to precise the extension .png or .jpg and don't make mistakes when writing 
+					the names of the image.<br/> If you make a mistake, you won't be able to visualize your image but you will see:<br/>
+					<img src="images/error_visualizing_html_css_part.jpg" alt="error_visualizing_html_css_part"/> <br/>
+					It is also possible to include gif. Lets try with an image of a cat ^^:<br/>
+					<img src="images/Pusheen-pusheen-the-cat-bike.gif" alt="a_cat_drive_a_bike"/> <br/>
+				</p>
+				<p>
+					Lets start the css (Cascading Style Sheets) part now :>, the language that will make our website beautiful. <br/>
+					First we can check the compatibility by showing compatibility tables 
+					of HTML and CSS on different WebBrowsers. 
+					Go to the website named 
+					<a href="http://www.caniuse.com" target="_blank">Caniuse</a>.<br/>
+					We will learn to use css by using only a .css file and not the other technics that are said to be of less quality.
+					So, first you need to create this file (name is style.css). Then, you will have to "call" this file in you html file 
+					to be able to use it. For that, you need to write < link rel="stylesheet" href="style.css" /> in the header.
+					Now, you can use your file :). You can for exemple change the color of your texts. You did to reference you text 
+					so you css file knows which text needs to have a different color. It is written that way: <br/>
+					<img src="images/css_example.jpg" alt="Example_of_css"/> </br>
+					It is also possible to change the police used for your text. Personaly, I used "Comic Sans MS" as police for 
+					all my texts. For that I wrote:</br>
+						*{</br>
+						font-family: "Comic Sans MS", Verdana, sans-serif;</br>
+						}</br>
+					As you surely noticed, I wrote Verdana and sans-serif. That is because it is possible that the police you have chosen 
+					is not taking into account by your WebBrower. That why you can precise a second police and if it doesn't work a kind of 
+					default	police.
+				</p>
+				
+				
+		
+		<p> 
+			If you want to know more about coding, you can use
+			<a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a>. 
+			This is a good website.
+		</p>
+	</body>
+
+</html>
