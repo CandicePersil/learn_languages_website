@@ -9,22 +9,50 @@
 <body>
 	<h1>How to code using Linux and Shell Scripts</h1>
 	<h2>Unix commands</h2>
+	<h3>Commands and parameters</h3>
 	<p>
-		Utiliser les images flotantes pour présenter les terminaux avec des essais de codes.
-		Présenter les codes réalisés car il faut bien pratiquer.
-		Pour cela il faudra écrire : </br>
-		< img src="image.jpg" class="float_image" alt="Float_image" /></br>
-		La classe devra être réutilisée dans le .css en écrivant:</br>
-		.float_image</br>
-		{</br>
-			float: left (or right);</br>
-		}</br>
-		Si l'on veut que le texte continu en dessous, il suffit de par exemple donner un attribut class="under" 
-		et de l'utiliser dans le .css: </br>
-		.under</br>
-		{</br>
-			float: both;</br>
-		}</br>
+		First, we have to know what to write in a linux terminal and how to write it.</br>
+		In a linuw terminal, we have to write commands. These commands can be used with parameters.</br>
+		These ones need to be written this way: me@pc:~$ <strong>command parameter1 parameter2</strong> etc..
+	</p>
+	<p>
+		<img src="images/linux-date.jpg" class="float_image_left" alt="Float_image_left_linux_date"/>
+		Linux allows us to display the current date in the terminal by using the date command.
+	</p>
+	<p>
+		<img src="images/linux-ls.jpg" class="float_image_right" alt="Float_image_right_linux_ls"/>
+		One of the most used command is <strong>ls</strong>. It helps us to display directories and files 
+		that are in the current directory.
+	</p>
+	<p>
+		<img src="images/linux-ls-a.jpg" class="float_image_left" alt="Float_image_left_linux_ls_a"/>
+		To show you that it does't show every files/directories but only the visible ones, lets create non visible ones.
+		As you see, these hiden files and directories have to have a dote before there names to be hiden.
+		Then, to see them,<strong>-a</strong> parameter has to be added after ls.</br></br></br></br></br></br>
+	</p>
+	<p>
+		<img src="images/linux-rm.jpg" class="float_image_right" alt="Float_image_right_linux_rm"/>
+		Because I had to create new files that I don't need to have an example, I will have to remove them.
+		For that, we use the <strong>rm</strong> command. It exists different associated parameters such as <strong>-r</strong> 
+		to remove directories and their contents and <strong>-d</strong> to remove empty directories. </br>
+		Of course, when we only use rm, it removes files.
+	</p>
+	<p>
+		As you surely noticed it, we need to write a <strong>-</strong> before writing parameters. But this is only for short ones.
+		For longer ones, <strong>--</strong> is writen instead. And as for little parameters we generally write:</br> 
+		<strong>command --param1 --param2</br>
+		command -parameter1 --param1</strong></br>
+		is also possible
+	</p>
+	<p>
+		Ls can also display contents of other directories than the current one. <br>You just have to add the name of the directory 
+		if this one is in your current one. So just add the name of the subdirectory you want to display contents</br>
+	</p>
+	<p>
+		<img src="images/linux-tab-tab.jpg" class="float_image_left" alt="Float_image_left_linux_tab_tab"/>
+		A really usefull thing you need to know when using a linux terminal and that you do not remember by heart commands. 
+		You can begin to write your command and after stop to complete more when you are not sure of the following part, 
+		you can use two times tabulation. It will display all possibilitis our terminal.
 	</p>
 </body>
 </html>
