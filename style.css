@@ -41,3 +41,17 @@ body/*reference to all things located in the body of the html page*/
 {
 	background-color: #ffffff;/*change background color*/
 }
+.float_image_left
+{
+	float: left;
+}
+.float_image_right
+{
+	float: right;
+}
+
+.home_page
+{
+	float: right;
+}
+

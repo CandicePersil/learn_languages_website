@@ -54,5 +54,45 @@
 		You can begin to write your command and after stop to complete more when you are not sure of the following part, 
 		you can use two times tabulation. It will display all possibilitis our terminal.
 	</p>
+	<h3>Files and directories</h3>
+	<p>
+		Something very important to know is that Linux see all its components as files. There is only one root: /.</br>
+		Root directories are: bin (exe), boot, dev (input), etc (configuration files), home (personal repositiry of users),</br> 
+		lib (shared libraries), media (SD card, etc...), mnt (tmp media), opt (add-ons), proc (system information),</br>
+		root (personal root directory), sbin (important system softwares), tmp (temp), usr (softwares used by users)</br>
+		and var (variable data).</br>
+	</p>
+	<p>
+		<strong>Where are you?</strong></br>
+		We use the <strong>pwd</strong> command to display the name of the current directory. We can also use <strong>which</strong> </br>
+		to know where is located a command. For exemple: <strong>which ls</strong>, it displays <strong>/usr/bin/ls</strong>. </br>
+	</p>
+	<p>
+		<strong>Again ls</strong></br>
+		<strong>Ls -l</strong> is used to display a list of detailed elements that are located in the current directory.</br>
+		By using <strong>ls -lh</strong> (we added h), file sizes are more understandable.</br>
+		<strong>Ls -lt</strong> (we added t), sort files by modification date. Whereas adding <strong>-r to -t</strong>, the list</br>
+		is displayed in the other order.</br>
+	</p>
+	<p>
+		<strong>Move in directories</strong></br>
+		The <strong>cd</strong> command is used to move in a directory by writting the directory name after it.</br>
+		Then, <strong>cd ..</strong> is used to go in the parent directory and <strong>cd ../..</strong> to go in the parent parent directory.</br>
+		The first remark does not work everywhere. In fact, it only works when the directory you are looking for is in you current directory.</br>
+		So, if you want to go in another directory that is not in your current one, you have to specify its parent directory.</br>
+		Example: you want to go in directory4 and you are in directory1. You know that directory4 is in a parent directory called pairDirectories.</br>
+		So, to go in directory4, write: cd /directories/directory4. That is not so complicated.</br>
+		Something essential needs to learnt here: <em>the easiest way to go in your home repository.</em> Just write <strong>cd ~</strong> or <strong>cd</strong>. ;)</br>
+	</p>
+		<strong>Do your computer need to lose weight?</strong></br>
+		<strong>Du</strong> is a command that displays your disk usage. It displays the size of subdirectories of your current directory. If you use <strong>-h</strong>, it is more understandable.</br>
+		As <strong>du</strong> only displays the size of directories, by adding -a you also have files size.</br>
+		If you have to many subdirectories, you can choose to display the total by using <strong>-s</strong>.
+	</p>
+	<h3>Lets play with files</h3>
+	<p>
+		
+	</p>
+	<a href="HTML.html" target="_blank" class="home_page">Go back to home page</a> 
 </body>
 </html>
