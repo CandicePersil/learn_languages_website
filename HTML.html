@@ -95,17 +95,31 @@
 					We will learn to use css by using only a .css file and not the other technics that are said to be of less quality.
 					So, first you need to create this file (name is style.css). Then, you will have to "call" this file in you html file 
 					to be able to use it. For that, you need to write < link rel="stylesheet" href="style.css" /> in the header.
-					Now, you can use your file :). You can for exemple change the color of your texts. You did to reference you text 
+					Now, you can use your file :). You can for example change the color of your texts. You did to reference you text 
 					so you css file knows which text needs to have a different color. It is written that way: <br/>
 					<img src="images/css_example.jpg" alt="Example_of_css"/> </br>
 					It is also possible to change the police used for your text. Personaly, I used "Comic Sans MS" as police for 
 					all my texts. For that I wrote:</br>
-						*{</br>
+						*/*reference to everything in the page*/</br>
+						{</br>
 						font-family: "Comic Sans MS", Verdana, sans-serif;</br>
 						}</br>
 					As you surely noticed, I wrote Verdana and sans-serif. That is because it is possible that the police you have chosen 
 					is not taking into account by your WebBrower. That why you can precise a second police and if it doesn't work a kind of 
 					default	police.
+					About images, it is possible to change their position. We actually can make float images.</br>
+					For that, we have to write:</br>
+						< img src="image.jpg" class="float_image" alt="Float_image" /></br>
+						class float_image will be used in.css as a reference point:</br>
+						.float_image //do not forget to put a point before class name</br>
+						{</br>
+							float: left (or right);//the following text is written on the right(or left) of the image</br>
+						}</br>
+						Text can also be written under the chosen image by using both in css file:</br>
+						.under</br>
+						{</br>
+							float: both;</br>
+						}</br>
 				</p>
 				
 				

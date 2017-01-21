@@ -91,6 +91,124 @@
 	</p>
 	<h3>Lets play with files</h3>
 	<p>
+		<strong>Display a file</strong></br>
+		Commands <strong>cat</strong> and <strong>less</strong> just display contents of a file. When <strong>cat</strong> displays all the contents, <strong>less</strong> displays </br>
+		only a part of it. If we had <strong>cat -n</strong>, numbers of lines are also displayed. After you opened your file with <strong>less</strong>, you can navigate inside  using b </br> 
+		"back to the beginning of the file", d "go further (11 lines more)", enter "further (1 line)", y "go back (1 line)", u "go back (11 lines)" and q "stop". </br>
+		Remember that if you do not know a command use <strong>help</strong>. It works in the open file and will display all commands.<br>
+		Something really usefull is also the command used to search for a word. Use <strong>/wordYouSearch</strong> and it will display it in the bottom. Then use <strong>n</strong></br>
+		to display the following one or <strong>N</strong> for the previous one. </br></br>
+		
+		<strong>Display the beginning and the end</strong></br>
+		<strong>head</strong> displays the beginning of a file and if you had <strong>-n numberOfLines</strong>, you can choose how many lines you will display. </br>
+		The same with <strong>tail</strong>, but it displays the end of a file. </br>
+		You can also use with <strong>tail</strong>, <strong>-f</strong> for follow if you file is changing. </br></br>
+		
+		<strong>create your own files and directories</strong></br>
+		The command <strong>touch</strong> can be used to create files. Put you file name with its extension and then you have a file.</br>
+		Of course, you can create several files by adding a space between names (it is also possible to create files names with spaces by using "" ;)). </br>
+		The command <strong>mkdir</strong> helps you to create directories. You can also create sub ones by using <strong>-p</strong> and directory/subdirectory/subsubdirectory . </br></br>
+		
+		<strong>Copy past</strong></br>
+		Use <strong>cp</strong> but becareful. There are many ways to use CP.</br>
+		<ul>
+			<li>
+				Copy a file and create a copy of this one with another name -> <em>cp fichierToCp newFichierCp</em>
+			</li>
+			<li>
+				Copy a file and put it in a directory -> <em>cp fichierToCp aDirectory/</em>
+			</li>
+			<li>
+				Copy a file and create a copy of this one with another name in a directory -> <em>cp fichierToCp aDirectory/newFichierCp</em>
+			</li>
+			<li>
+				Copy a file and in a directory using an absolute path -> <em>cp fichierToCp /aDirectory/aSubDirectory/</em>
+			</li>
+			<li>
+				Copy a directory and all its subdirectories and files and create a new directory -> <em>cp -R directory newDirectory</em>
+			</li>
+			<li>
+				Copy all files with a same extension, same names beginning in a directory -> <em>cp *.txt aDirectory/</em> or <em>cp fileBeginning* aDirectory/</em>
+			</li>
+		</ul>
+		Use <strong>mv</strong> to move a file or a directory in another directory. You can use it as you do with <strong>cp</strong>. </br>
+		Use <strong>mv</strong> to rename a file -> <em>mv file newFileName</em>. Or do both with <em>mv file aDirectory/newFileName</em> </br></br>
+		
+		<strong>Remove a file or a directory</strong></br>
+		Use <strong>rm</strong> to remove a file.</br></br>
+		
+		<strong>Link your files</strong></br>
+		You can create a physical link or a symbolic one.</br>
+		<ul>
+			<li>
+				Physical link between two files (one file needs to be empty) -> <em>ln emptyFile existingFile</em>
+			</li>
+			<li>
+				Symbolic link between two files (one file needs to be empty) -> <em>ln -s emptyFile existingFile</em>
+			</li>
+		</ul>		
+	</p>
+	<h3>Are you able to do everything you want to?</h3>
+	<p>
+		The answer is: it depends on your rights.</br>
+		...
+	</p>
+	<h2>Unix commands</h2>
+	<h3>Vim</h3>
+	<p>
+		We will use vim to create shell scripts</br>
+		Important things to know about vim: </br>
+		There are 3 modes: Insertion, interactive and command.</br>
+		Interactive mode:</br>
+		i: insertion</br>
+		h, j, k, l: directions</br>
+		0 and $: position on the beginning and end of line</br>
+		w: move from one word to the next one</br>
+		x: remove letters</br>
+		u: go back</br>
+		ctrl + r: go forward</br>
+		(number)u: remove the number of letters given</br>
+		dd: remove a line</br>
+		(number)dd: remove the number of lines indicated</br>
+		-> the lines are not really removed, they are cut</br>
+		-> p: can be used just after to past them in another place</br>
+		dw: remove a word</br>
+		(number)dw: remove this number of words</br>
+		d0: remove the beginning of the curent line (before the cursor)</br>
+		d$: remove the end of the line (after the cursor)</br>
+		yy: copy a line</br>
+		yw: copy a word</br>
+		(number)p: past "number" times the already cody element</br>
+		r: replace a letter (r(letter) with our cursor on the letter 
+		to replace)</br>
+		(line number)G: go to line number</br>
+		G: go to the last line</br>
+		gg: go to the first line</br>
+		/(word): search for this word in the file, then use "n" to search for 
+		the next occurence and "N" for the previous one.<br/>
+		?: same than / but from the beginning</br>
+
+
+		</br>
+		Command mode:</br>
+		:w -> save the current file</br>
+		:w myfile -> save and display "myfile" written</br>
+		:q -> quit (close the file)</br>
+		:q! -> quit without saving</br>
+		:wq -> save and quit</br>
+		:s/former/new -> replace the first occurence of the word at 
+		the line where is located our cursor</br>
+		
+		<em>:sp</em> -> split our screen in two parts horizontaly 
+		(same file opened twice)</br>
+		<em>:sp otherFile</em> -> split our in two with another file</br>
+		<em>:vsp</em> -> split our screen in two parts verticaly</br>
+		<em>ctrl + w</em> then <em>q</em> to quite the current viewport</br>
+
+		
+	</p>
+	<h3>Shell script</h3>
+	<p>
 		
 	</p>
 	<a href="HTML.html" target="_blank" class="home_page">Go back to home page</a> 
