@@ -1,17 +1,22 @@
 h1/*reference to main title*/
 {
 	color: #ffffff;/*green*/
-	font-family: Verdana, sans-serif;
+	font-family: 'learning_curve_4.0', Verdana, sans-serif;
+	font-size: 60px; /* titre de 60 pixels */
 	text-align: center;
 	background-color: #009973;
 }
 h2/*reference to second type of title*/
 {
 	color: #00802b;/*shadow green*/
+	font-size: 30px;
+	text-align: center;
 }
 h3/*title also*/
 {
 	color: #003311;/*dark green*/
+	font-size: 25px;
+	text-align: center;
 }
 .key_word/*reference to a class named key_word (can be used several times)*/
 {
@@ -36,8 +41,41 @@ a[class="local_page"]/*reference to links with the class attribut named local_pa
 p/*reference to all paragraphs of the page*/
 {
 	text-align: justify;/*justify texts*/
+	/* La police importée est utilisée ci-dessous */
+	font-family: 'learning_curve_4.0', Verdana, serif;
+	font-size: 25px;
 }
-body/*reference to all things located in the body of the html page*/
+
+//body/*reference to all things located in the body of the html page*/
+//{
+	// //background-color: #ffffff;/*change background color*/
+	//background-image: url("image/font_white.jpeg");/* Une image comme fond*/
+	//background-attachment: fixed; /* Le fond reste fixe */
+	//background-repeat: no-repeat; /* Ne pas répéter l'image */
+//}
+
+body
 {
-	background-color: #ffffff;/*change background color*/
+	/* deux images utilisées en fond */
+	background: url("image/python_colore.png") fixed no-repeat bottom right, url("image/font_white.jpeg") fixed no-repeat;
+}
+#img
+{
+	/* how will be displayed images */
+}
+.img_float
+{
+	float: left; 
+	/* l'image est flottante et se positionne à gauche du text*/
+}
+.under
+{
+	clear: both; /* le text sera écrit en dessous de l'image */
+}
+@font-face /* definition d une nouvelle police */
+{
+	/* Cette poilice a été téléchargée, elle se trouve comme indiqué
+	 dans source. */
+	font-family: "learning_curve_4.0";
+	src: url('learning_curve_4.0/OpenType TrueType/learning_curve_regular_ot_tt.ttf') format('truetype');
 }
