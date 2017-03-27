@@ -33,14 +33,18 @@
 				</br> Une autre fonction: print("a=",a,"b=",b) avec a et b des variables ou encore print("Hello World!")
 				</br></br>
 				Un autre façon d'écrire les fonctions: utilisation de lambda</br>
+			</p>
+			<p id=box>
 				f = lambda x: x*x
 				</br>f(5) >>>25
+			</p>
+			<p id=box>
 				</br>f1 = lambda x, y: x+y
 				</br>f1(5,4) >>>9
 			</p>
 			
 		<h4>Les structures conditionnelles</h4>
-			<p>
+			<p id=box>
 				if a>0 and b=0:
 				</br>.	print("a>0 et b=0")
 				</br>elif a>0 or b=0:  
@@ -63,17 +67,25 @@
 			</p>
 		
 		<h4>Les boucles</h4>
-			<p>
+			<p id=box>
 				while condition:
 				</br>.	# instruction 1
 				</br>.	# instruction 2
-				</br></br>
+			</p>
+			<p>
 				for element in sequence:
-				</br>Un exemple : variable = "une_var"
+				</br>Un exemple : 
+			</p>
+			<p id=box>
+				variable = "une_var"
 				</br>for lettre in une_var: 
 				</br>.	print(lettre)
-				</br> 
-				</br>Un autre exemple : variable = "une_var"
+			</p>
+			<p>
+				Un autre exemple : 
+			</p>
+			<p id=box>
+				variable = "une_var"
 				</br>for lettre in une_var: 
 				</br>.	if lettre in "aeiouy"
 				</br>.	print(lettre)
@@ -114,14 +126,22 @@
 		<h4>Les packages = répertoires</h4>
 			<p>
 				C'est un moyen de regrouper les modules. Ils peuvent être agencé de la sorte:
-				</br>*package principal
-				</br>.	*package secondaire 1
-				</br>.		*module 1
-				</br>.		*module 1_1
-				</br>.	*package secondaire 2
-				</br>.		*module 2
-				</br>.		*module 2_1
-				</br></br>
+				<ul>
+					<li><p>package principal</p></li>
+					<ul>
+							<li><p>package secondaire 1</p></li>
+							<ul>
+								<li><p>module 1</p></li>
+								<li><p>module 1_1</p></li>
+							</ul>
+							<li><p>package secondaire 2</p></li>
+							<ul>
+								<li><p>module 2</p></li>
+								<li><p>module 2_1</p></li>
+							</ul>
+					</ul>
+				</ul>
+			<p>
 				Pour les importer: import mon_package
 				</br>import mon_package.sous_package
 				</br>import package.sous_package_module
@@ -134,38 +154,49 @@
 				</br>instructions à exécuter en code d'erreur -> except
 			</p>
 			<h5>Forme minimale</h5>
-				<p>
+				<p id=box>
 					try:
 					</br>.	#code à tester
 					</br>except:
 					</br>.	#print("exception 1")
+				</p>
+				<p>
 					</br>Il n'y a pas de différentiation entre les différentes exceptions possibles.
 					</br>Cela ne signifie pas forcément qu'il y a des erreurs.
 				</p>
 			<h5>Forme complète</h5>
 				<p>
 					Gère les différents types d'erreurs.
-					</br>try:
+				</p>
+				<p id=box>
+					try:
 					</br>.	#code
 					</br>except CodeErreur1:
 					</br>.	print("C'est l'erreur 1.")
 					</br>execept CodeErreur2:
 					</br>.	print("C'est l'erreur 2.")
-					</br></br>
+				</p>
+				<p>
 					L'erreur peut être capturée:
-					</br>try:
+				</p>
+				<p id=box>
+					try:
 					</br>.	#code
 					</br>except type_d_exception as exception_retournee:
 					</br>.	print("L'erreur est : ", exception_retournee)
-					</br></br>
+				</p>
+				<p>
 					Utilisation de else:
-					</br>try:
+				</p>
+				<p id=box>
+					try:
 					</br>.	#code
 					</br>except Exception:
 					</br>.	print("...")
 					</br>else:
 					</br>.	print("Le resultat est : ", resultat)
-					</br></br>
+				</p>
+				<p>
 					Le mot clé finally:
 					</br>Après try et except. Cela permet d'exécuter l'intruction de try avec ou sans présence d'erreurs.
 					</br></br>

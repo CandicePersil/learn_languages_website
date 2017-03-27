@@ -14,10 +14,27 @@ h2/*reference to second type of title*/
 }
 h3/*title also*/
 {
-	color: #003311;/*dark green*/
+	color: #009973;/*green*/
 	font-size: 25px;
 	text-align: center;
+	background-color: white;
+	font-weight: bold; /*text en gras*/
 }
+h4
+{
+	color: #ff5050;/*pink*/
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+}
+h5
+{
+	color: #33cc33;/*green apaisant*/
+	font-size: 15px;
+	text-align: center;
+	background-color: white;
+}
+
 .key_word/*reference to a class named key_word (can be used several times)*/
 {
 	color: #00994d;/*light blue green*/
@@ -45,6 +62,29 @@ p/*reference to all paragraphs of the page*/
 	font-family: 'learning_curve_4.0', Verdana, serif;
 	font-size: 25px;
 }
+#box
+{
+	border: 3px black solid;
+	border-radius: 10px;
+	background-color: #000000;
+	color: #ffffff;
+	box-shadow: 4px 4px 10px #aaa;
+}
+
+/*hover: survol de liens, active: clique sur le lien, 
+focus: l'élément est sélectionné, visited: la page a été visité
+*/
+p:hover
+{
+	background-color: #009973;
+	color: white; 
+}
+
+#box:hover
+{
+	border: 3px #ff5050 solid; /*pink*/
+	background-color: #009973;
+}
 
 //body/*reference to all things located in the body of the html page*/
 //{
@@ -59,9 +99,10 @@ body
 	/* deux images utilisées en fond */
 	background: url("image/python_colore.png") fixed no-repeat bottom right, url("image/font_white.jpeg") fixed no-repeat;
 }
-#img
+figure
 {
 	/* how will be displayed images */
+	text-align: center;
 }
 .img_float
 {
